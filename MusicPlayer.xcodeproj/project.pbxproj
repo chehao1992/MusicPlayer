@@ -13,6 +13,12 @@
 		C207AED11B9474DD00B15E85 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C207AED01B9474DD00B15E85 /* Images.xcassets */; };
 		C207AED41B9474DD00B15E85 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C207AED21B9474DD00B15E85 /* LaunchScreen.xib */; };
 		C207AEE01B9474DD00B15E85 /* MusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C207AEDF1B9474DD00B15E85 /* MusicPlayerTests.swift */; };
+		C207AEEC1B947F0A00B15E85 /* MusicListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C207AEEB1B947F0A00B15E85 /* MusicListTableViewController.swift */; };
+		C207AEEE1B9486A500B15E85 /* GetMusicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C207AEED1B9486A500B15E85 /* GetMusicInfo.swift */; };
+		C207AEF11B94904C00B15E85 /* MusicInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C207AEF01B94904C00B15E85 /* MusicInfoModel.swift */; };
+		C2091CC01B9D33D800454FA5 /* LRCAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2091CBF1B9D33D800454FA5 /* LRCAnalysis.swift */; };
+		C20A13A41B99821700DDDD2E /* PlayMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A13A31B99821700DDDD2E /* PlayMusicViewController.swift */; };
+		C20A13A71B99A45C00DDDD2E /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A13A61B99A45C00DDDD2E /* Music.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		C207AED91B9474DD00B15E85 /* MusicPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C207AEDE1B9474DD00B15E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C207AEDF1B9474DD00B15E85 /* MusicPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerTests.swift; sourceTree = "<group>"; };
+		C207AEEB1B947F0A00B15E85 /* MusicListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListTableViewController.swift; sourceTree = "<group>"; };
+		C207AEED1B9486A500B15E85 /* GetMusicInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMusicInfo.swift; sourceTree = "<group>"; };
+		C207AEF01B94904C00B15E85 /* MusicInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicInfoModel.swift; sourceTree = "<group>"; };
+		C2091CBF1B9D33D800454FA5 /* LRCAnalysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRCAnalysis.swift; sourceTree = "<group>"; };
+		C20A13A31B99821700DDDD2E /* PlayMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMusicViewController.swift; sourceTree = "<group>"; };
+		C20A13A61B99A45C00DDDD2E /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +89,14 @@
 		C207AEC61B9474DD00B15E85 /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C20A13A51B99A44300DDDD2E /* sign */,
+				C207AEEF1B94903400B15E85 /* Model */,
 				C207AEC91B9474DD00B15E85 /* AppDelegate.swift */,
 				C207AECB1B9474DD00B15E85 /* ViewController.swift */,
+				C207AEEB1B947F0A00B15E85 /* MusicListTableViewController.swift */,
+				C207AEED1B9486A500B15E85 /* GetMusicInfo.swift */,
+				C20A13A31B99821700DDDD2E /* PlayMusicViewController.swift */,
+				C2091CBF1B9D33D800454FA5 /* LRCAnalysis.swift */,
 				C207AECD1B9474DD00B15E85 /* Main.storyboard */,
 				C207AED01B9474DD00B15E85 /* Images.xcassets */,
 				C207AED21B9474DD00B15E85 /* LaunchScreen.xib */,
@@ -110,6 +128,23 @@
 				C207AEDE1B9474DD00B15E85 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C207AEEF1B94903400B15E85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C207AEF01B94904C00B15E85 /* MusicInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C20A13A51B99A44300DDDD2E /* sign */ = {
+			isa = PBXGroup;
+			children = (
+				C20A13A61B99A45C00DDDD2E /* Music.swift */,
+			);
+			name = sign;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +191,7 @@
 		C207AEBC1B9474DD00B15E85 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = chehao;
 				TargetAttributes = {
@@ -212,7 +248,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C207AEF11B94904C00B15E85 /* MusicInfoModel.swift in Sources */,
+				C2091CC01B9D33D800454FA5 /* LRCAnalysis.swift in Sources */,
+				C207AEEC1B947F0A00B15E85 /* MusicListTableViewController.swift in Sources */,
 				C207AECC1B9474DD00B15E85 /* ViewController.swift in Sources */,
+				C207AEEE1B9486A500B15E85 /* GetMusicInfo.swift in Sources */,
+				C20A13A71B99A45C00DDDD2E /* Music.swift in Sources */,
+				C20A13A41B99821700DDDD2E /* PlayMusicViewController.swift in Sources */,
 				C207AECA1B9474DD00B15E85 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +451,7 @@
 				C207AEE51B9474DD00B15E85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C207AEE61B9474DD00B15E85 /* Build configuration list for PBXNativeTarget "MusicPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +460,7 @@
 				C207AEE81B9474DD00B15E85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
